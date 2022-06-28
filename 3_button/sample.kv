@@ -1,0 +1,21 @@
+<RootLayout>:
+    sid: button01_label
+
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    
+    Button:
+        text: 'Button01'
+        size_hint: 0.3, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.1}
+        on_press: root.button01_clicked()
+    
+    Label:
+        id: button01_label
+        text: ''
+        size_hint: 0.3, 0.1
+        pos_hint: {'center_x': 0.5, 'center_y': 0.7}
