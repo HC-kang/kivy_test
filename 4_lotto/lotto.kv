@@ -1,0 +1,123 @@
+<RootLayout>:
+    lbl_num01:lbl_num01
+    lbl_num02:lbl_num02
+    lbl_num03:lbl_num03
+    lbl_num04:lbl_num04
+    lbl_num05:lbl_num05
+    lbl_num06:lbl_num06
+
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+        padding: 10
+
+        Label:
+            id: lbl_num01
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            id: lbl_num02
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+
+        Label:
+            id: lbl_num03
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            id: lbl_num04
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            id: lbl_num05
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        Label:
+            id: lbl_num06
+            font_size: '25sp'
+            text: ''
+            color: 3, 13, 194, 0.84
+            size_hint: 1, 0.2
+            pos_hint: {'center_y': 0.7}
+            canvas.before:
+                Color:
+                    rgba: 146, 146, 144, 0.49
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+    BoxLayout:
+        orientation: 'horizontal'
+        spacing: 10
+        padding: 10
+
+        Button:
+            text: 'Generate Number'
+            font_size: '20sp'
+            size_hint: 0.5, 0.1
+            pos_hint: {'center_y': 0.1}
+            on_press: root.button01_clicked()
+
+        Button:
+            text: 'Reset Number'
+            font_size: '20sp'
+            size_hint: 0.5, 0.1
+            pos_hint: {'center_y': 0.1}
+            on_press: root.button02_clicked()
